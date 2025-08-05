@@ -1,0 +1,17 @@
+# Ignore executables (Linux/macOS)
+main
+a.out
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore binaries with no extension
+*/bin/*
+*/build/*
+build/
+bin/
+
+# Ignore everything produced by g++
+*.exe       # for Windows, just in case
+

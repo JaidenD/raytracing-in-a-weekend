@@ -9,7 +9,7 @@ class vec3 {
         double e[3];
 
         vec3() : e{0,0,0} {}
-        vec3(double e0, double e1, double e2) : e{e0, e1, e2}
+        vec3(double e0, double e1, double e2) : e{e0, e1, e2} {}
 
         double x() const { return e[0]; }
         double y() const { return e[1]; }
@@ -54,7 +54,7 @@ class vec3 {
 };
 
 // Geometry alias for vec3
-using point3 = vec3
+using point3 = vec3;
 
 // Utility functions
 
@@ -84,7 +84,7 @@ inline vec3 operator*(const vec3& v, double t){
 }
 
 // Scalar multiplcation commutes
-inline vec3 operator*(double t, tconst vec3& v){
+inline vec3 operator*(double t, const vec3& v){
     return vec3(t*v.e[0], t*v.e[1], t*v.e[2]);
 }
 

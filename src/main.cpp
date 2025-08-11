@@ -14,11 +14,11 @@ int main() {
     
     // Image
     
-    auto aspect ratio = 16.0/9.0;
+    auto aspect_ratio = 16.0/9.0;
     int image_width = 400;
 
     // Calculate the image height and make sure it isnt less than 1
-    int image_height = int(image_wifth / aspect_ratio);
+    int image_height = int(image_width / aspect_ratio);
     image_height = (image_height < 1) ? 1 : image_height;
 
     // Camera
